@@ -1,0 +1,16 @@
+{
+  "name": "guia-hoteles",
+  "version": "1.0.0",
+  "description": "Nuestro primer proyecto de nodejs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://marusssita@bitbucket.org/marusssita/guia-hoteles.git"
+  },
+  "author": "Mariana Cañete",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/marusssita/guia-hoteles#readme"
+}
