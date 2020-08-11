@@ -2,7 +2,6 @@
 	background-color: firebrick;
 	color: white;
 	margin-top: 50px;
-
 }
 
 .footer{
@@ -13,10 +12,10 @@
 }
 
 .card-hotel {
-	flex: 1 150px;
-	padding:2px 5px 2px 5px;
+	flex: 1 200px;
+	padding:2px 0px 2px 0px;
 	margin-top: 10px;
-	margin-bottom:  10px;
+	margin-bottom: 10px;
 }
 
 .card-hotel p {
@@ -30,6 +29,7 @@
 
 .btn-reserva{
 	width: 100%;
+	border-radius: 0;
 }
 
 .footer-adress-icon{
@@ -39,5 +39,5 @@
 
 .footer-social-icon{
 	padding-right: 10px;
-
 }
+
