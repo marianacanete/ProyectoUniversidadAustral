@@ -42,96 +42,113 @@
   </div>
 
 	<div class="container">
-
 		<nav aria-label="breadcrumb">
 			<ol class="breadcrumb">
 				<li class="breadcrumb-item"> <a href="index.html">Home</a></li>
 				<li class="breadcrumb-item active" aria-current="page">Precios</li>
 			</ol>
 		</nav>
-		<div class="table-responsive">
-			<table class="table table-striped">
-				<thead class="thead-dark">
-					<th>Calidad</th>
-					<th>Palermo</th>
-					<th>Recoleta</th>
-					<th>San telmo</th>
-					<th>Belgrano</th>
-				</thead>
-				<tbody>
-					<tr>
-						<td><span class="oi oi-star"></span></td>
-						<td>$100</td>
-						<td>$120</td>
-						<td>$150</td>
-						<td>$180</td>
-					</tr>
-					<tr>
-						<td><span class="oi oi-star"><span class="oi oi-star"></span></span></td>
-						<td>$200</td>
-						<td>$220</td>
-						<td>$250</td>
-						<td>$280</td>
-					</tr>
-					<tr>
-						<td><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
-						<td>$300</td>
-						<td>$320</td>
-						<td>$350</td>
-						<td>$380</td>
-					</tr>
-					<tr>
-						<td><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
-						<td>$400</td>
-						<td>$420</td>
-						<td>$450</td>
-						<td>$480</td>
-					</tr>
-					<tr>
-						<td><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
-						<td>$500</td>
-						<td>$520</td>
-						<td>$550</td>
-						<td>$580</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
 
-
-		<div class="d-flex justify-content-center">
-			<div class="card" style="width: 18rem">
-				<div class="card-header" style="background-color: red; color:white;">
-					Tarjetas aceptadas
+		<ul class="nav nav-tabs" id="myTab" role="tablist">
+			<li class="nav-item">
+				<a  class="nav-link active" id="compara-tab" data-toggle="tab" href="#compara" role="tab" aria-controls="compara" aria-selected="true">Compara</a>
+			</li>
+			<li class="nav-item">
+				<a  class="nav-link" id="tarjetas-tab" data-toggle="tab" href="#tarjetas" role="tab" aria-controls="tarjetas" aria-selected="false">Tarjetas</a>
+			</li>
+			<li class="nav-item">
+				<a  class="nav-link" id="comentarios-tab" data-toggle="tab" href="#comentarios" role="tab" aria-controls="comentarios" aria-selected="false">Comentarios</a>
+			</li>
+		</ul>
+		<div class="tab-content" id="myTabContent">
+			<div class="tab-pane fade show active" id="compara" role="tabpanel" aria-labelledby="compara-tab"> 
+				<div class="table-responsive">
+					<table class="table table-striped">
+						<thead class="thead-dark">
+							<th>Calidad</th>
+							<th>Palermo</th>
+							<th>Recoleta</th>
+							<th>San telmo</th>
+							<th>Belgrano</th>
+						</thead>
+						<tbody>
+							<tr>
+								<td><span class="oi oi-star"></span></td>
+								<td>$100</td>
+								<td>$120</td>
+								<td>$150</td>
+								<td>$180</td>
+							</tr>
+							<tr>
+								<td><span class="oi oi-star"><span class="oi oi-star"></span></span></td>
+								<td>$200</td>
+								<td>$220</td>
+								<td>$250</td>
+								<td>$280</td>
+							</tr>
+							<tr>
+								<td><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
+								<td>$300</td>
+								<td>$320</td>
+								<td>$350</td>
+								<td>$380</td>
+							</tr>
+							<tr>
+								<td><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
+								<td>$400</td>
+								<td>$420</td>
+								<td>$450</td>
+								<td>$480</td>
+							</tr>
+							<tr>
+								<td><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
+								<td>$500</td>
+								<td>$520</td>
+								<td>$550</td>
+								<td>$580</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
-				<ul class="list-group list-group-flush">
-					<li class="list-group-item">Tarjeta básica</li>
-					<li class="list-group-item">Tarjeta VIP</li>
-					<li class="list-group-item">Tarjeta Black</li>
-				</ul>
+			</div>
+		
+
+		<div class="tab-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab"> 
+
+			<div class="d-flex justify-content-center">
+				<div class="card" style="width: 18rem">
+					<div class="card-header" style="background-color: red; color:white;"> Tarjetas aceptadas</div>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item">Tarjeta básica</li>
+						<li class="list-group-item">Tarjeta VIP</li>
+						<li class="list-group-item">Tarjeta Black</li>
+					</ul>
+				</div>
 			</div>
 		</div>
-	</div>
+	
 
+			<div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comenatrios-tab"> Comentarios </div>
+		</div>
+	</div>
+	
 <footer class="footer">
-
-<div class="row">
-	<div class="col-sm-4 d-flex flex-column">
-		<a href="http://www.facebook.com"> <i class="fab fa-facebook-square footer-social-icon"></i>Facebook</a>
-		<a href="http://www.twitter.com"> <i class="fab fa-twitter-square footer-social-icon"></i>Twitter</a>
-		<a href="http://www.Instagram.com"> <i class="fab fa-instagram-square footer-social-icon"></i>Instagram</a>
-	</div> 
-	
-	<div class="col-sm-4">
-		<address>
-			<h3>Oficina Central</h3>
-			<p><span class="oi oi-home footer-adress-icon"></span>Laprida 4967, CABA, Argentina</p>
-			<p><span class="oi oi-phone footer-adress-icon"></span>+54956289845</p>
-			<p><span class="oi oi-inbox footer-adress-icon"></span>info@guiahoteles.com.ar</p>
-		 </address>
-
-	</div>
-	
+	<div class="row">
+		<div class="col-sm-4 d-flex flex-column">
+			<a href="http://www.facebook.com"> <i class="fab fa-facebook-square footer-social-icon"></i>Facebook</a>
+			<a href="http://www.twitter.com"> <i class="fab fa-twitter-square footer-social-icon"></i>Twitter</a>
+			<a href="http://www.Instagram.com"> <i class="fab fa-instagram-square footer-social-icon"></i>Instagram</a>
+		</div> 
+		
+		<div class="col-sm-4">
+			<address>
+				<h3>Oficina Central</h3>
+				<p><span class="oi oi-home footer-adress-icon"></span>Laprida 4967, CABA, Argentina</p>
+				<p><span class="oi oi-phone footer-adress-icon"></span>+54956289845</p>
+				<p><span class="oi oi-inbox footer-adress-icon"></span>info@guiahoteles.com.ar</p>
+			 </address>
+		</div>
+		
 		<div class="col-sm-4 d-flex flex-column align-items-end">
 			<a href="http://www.facebook.com">Nosotros</a>
 			<a href="http://www.twitter.com">Servicios</a>
