@@ -57,6 +57,7 @@
 			</div>
 		</div>
 
+
 		<div class="row">
 			<div class="col-sm-4 collapse multi-collapse text-center" id="buscas" >
 				<p>
@@ -81,7 +82,30 @@
 		</div>
 	<hr>
 
-	  <img src="imagenes/alojamiento.jpg" width="100%" class="img-fluid" alt="Resposive image">
+
+		<div id="carouselControls" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					 <img src="imagenes/alojamiento.jpg" width="100%" class="" alt="Primer slide">
+				</div>
+				<div class="carousel-item">
+					 <img src="imagenes/obelisco.jpg" width="100%" class="" alt="Segundo slide">
+				</div>
+				<div class="carousel-item">
+					 <img src="imagenes/floralis.jpg" width="100%" class="" alt="Tercer slide">
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Anterior</span>
+			</a>
+						<a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Siguiente</span>
+			</a>
+		</div>
+
+	 
 
 	<div class="d-flex flex-wrap">
 
@@ -273,7 +297,10 @@
     <script>
     	$(function(){
 			$("[data-toggle='tooltip']").tooltip();    	
-			$("[data-toggle='popover']").popover();   	
+			$("[data-toggle='popover']").popover();   
+			$('.carousel').carousel({
+				interval:2000
+			});
     	});
     </script>
   </body>
