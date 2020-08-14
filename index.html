@@ -18,7 +18,7 @@
   <body>
 
   	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-   		<a class="navbar-brand" href="#">Hoteles</a>
+   		<a class="navbar-brand" href="index.html">Hoteles</a>
    		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
    			<span class="navbar-toggler-icon"> </span>
    		</button>
@@ -46,31 +46,37 @@
 		</nav>
 
 		<div class="row">
-			<div class="col-sm-4">
+			<div class="col-sm-4 text-center">
 				<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#buscas"  aria-expanded="false" aria-controls="multiCollapse1">Buscas</button>	
 			</div>
-			<div class="col-sm-4">
+			<div class="col-sm-4 text-center">
 				<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#elegis" aria-expanded="false" aria-controls="multiCollapse2">Elegis</button>	
 			</div>
-			<div class="col-sm-4">
+			<div class="col-sm-4 text-center">
 				<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#reservas"  aria-expanded="false" aria-controls="multiCollapse3">Reservas</button>	
 			</div>
 		</div>
 
 		<div class="row">
-			<div class="col-sm-4 collapse multi-collapse" id="buscas" >
-				<h4>Buscas la ubicación</h4>
-				<p>La guía más completa de hoteles de la Ciudad Autonoma de Buenos Aires. Solo tenés que buscar de acuerdo a la zona en la que te querés hospedar</p>
+			<div class="col-sm-4 collapse multi-collapse text-center" id="buscas" >
+				<p>
+					<h5>Buscas la ubicación</h5>
+					<p>La guía más completa de hoteles de la Ciudad Autonoma de Buenos Aires. Solo tenés que buscar de acuerdo a la zona en la que te querés hospedar</p>
+				</p>
 			</div>
 
-			<div class="col-sm-4 collapse multi-collapse" id="elegis">
-				<h4>Elegis el hotel</h4>
-				<p>Seleccioná el hotel que se adapte a tus necesidades.</p>
+			<div class="col-sm-4 collapse multi-collapse text-center" id="elegis">
+				<p>
+					<h5>Elegis el hotel</h5>
+					<p>Seleccioná el hotel que se adapte a tus necesidades.</p>	
+				</p>
 			</div>
 
-			<div class="col-sm-4 collapse multi-collapse" id="reservas">
-				<h4>Realizas tu reserva</h4>
-				<p>Con un solo click, podes reservar el hotel en la fecha de tu viaje.</p>
+			<div class="col-sm-4 collapse multi-collapse text-center" id="reservas">
+				<p>
+					<h5>Realizas tu reserva</h5>
+					<p>Con un solo click, podes reservar el hotel en la fecha de tu viaje</p>	
+				</p>
 			</div>
 		</div>
 	<hr>
@@ -86,7 +92,7 @@
 				<img class="card-img-top img-thumbnail" src="imagenes/retiro.jpg" alt="Resposive image">
 				<p class="card-text">Hotel ubicado en la zona de Retiro, cercano al centro de transbordo ferroviario</p>
 			</div>
-			<div><button type="button"class="btn btn-danger btn-reserva">Resevar</button></div>
+			<div><button type="button"class="btn btn-danger btn-reserva" data-toggle="modal" data-target="#reserva">Resevar</button></div>
 		</div>
 
 		<div class="card card-hotel d-flex flex-column justify-content-between ml-2 mr-2">
@@ -96,7 +102,7 @@
 				<img class="card-img-top img-thumbnail" src="imagenes/palermo.jpg" alt="Resposive image">
 				<p class="card-text">Hotel ubicado en la zona de Palermo Soho, cercano a los bares más reconocidos de la Ciudad Autónoma de Buenos Aires</p>
 			</div>
-			<div><button type="button" class="btn btn-danger btn-reserva"> <span class="oi oi-chevron-right"></span> Resevar</button></div>	
+			<div><button type="button"class="btn btn-danger btn-reserva" data-toggle="modal" data-target="#reserva">Resevar</button></div>	
 		</div>
 
 		<div class="card card-hotel d-flex flex-column justify-content-between ml-2 mr-2">
@@ -106,7 +112,7 @@
 				<img class="card-img-top img-thumbnail" src="imagenes/recoleta.jpg" alt="Resposive image">
 				<p class="card-text">Este hotel se encuentra ubicado en el corazón del barrio de Recoleta</p>	
 			</div>
-			<div><button type="button"class="btn btn-danger btn-reserva">Resevar</button></div>
+			<div><button type="button"class="btn btn-danger btn-reserva" data-toggle="modal" data-target="#reserva">Resevar</button></div>
 		</div>
 
 		<div class="card card-hotel d-flex flex-column justify-content-between ml-2 mr-2">
@@ -116,7 +122,7 @@
 				<img class="card-img-top img-thumbnail" src="imagenes/belgrano.jpg" alt="Resposive image">
 				<p class="card-text">Hotel ubicado en la zona de Belgrano</p>	
 			</div>
-			<div><button type="button"class="btn btn-danger btn-reserva">Resevar</button></div>
+			<div><button type="button"class="btn btn-danger btn-reserva" data-toggle="modal" data-target="#reserva">Resevar</button></div>
 		</div>
 
 		<div class="card card-hotel d-flex flex-column justify-content-between ml-2 mr-2">
@@ -126,7 +132,7 @@
 				<img class="card-img-top img-thumbnail" src="imagenes/once.jpg" alt="Resposive image">
 				<p class="card-text">Hotel ubicado en el barrio comercial de Once</p>
 			</div>
-			<div><button type="button"class="btn btn-danger btn-reserva">Resevar</button></div>
+			<div><button type="button"class="btn btn-danger btn-reserva" data-toggle="modal" data-target="#reserva">Resevar</button></div>
 		</div>
 
 		<div class="card card-hotel d-flex flex-column justify-content-between ml-2 mr-2">
@@ -136,7 +142,7 @@
 				<img class="card-img-top img-thumbnail" src="imagenes/santelmo.jpg" alt="Resposive image">
 				<p class="card-text">En el barrio historico y turístico de San Telmo, a metros de la Avenida 9 de Julio se ubica este hotel</p>	
 			</div>
-			<div><button type="button" class="btn btn-danger btn-reserva">Resevar</button></div>
+			<div><button type="button"class="btn btn-danger btn-reserva" data-toggle="modal" data-target="#reserva">Resevar</button></div>
 		</div>
 		
 		<div class="card card-hotel d-flex flex-column justify-content-between ml-2 mr-2">
@@ -146,7 +152,9 @@
 				<img class="card-img-top img-thumbnail" src="imagenes/microcentro.jpg" alt="Resposive image">
 				<p class="card-text">Si estas buscando hospedarte en la zona más centrica de la Ciudad Autónoma de Buenos Aires, este hotel es para vos</p>	
 			</div>
-			<div><button type="button"class="btn btn-danger btn-reserva">Resevar</button></div>
+			<div>
+				<button type="button"class="btn btn-danger btn-reserva" data-toggle="modal" data-target="#reserva">Resevar</button>
+			</div>
 		</div>
 		
 		<div class="card card-hotel d-flex flex-column justify-content-between ml-2 mr-2">
@@ -156,11 +164,78 @@
 				<img class="card-img-top img-thumbnail" src="imagenes/puertomadero.jpg" alt="Resposive image">
 				<p class="card-text">Hotel ubicado en pleno Puerto Madero, la zona más top de la C.A.B.A.</p>
 			</div>
-			<div><button type="button"class="btn btn-danger btn-reserva">Resevar</button></div>
+				<div>
+					<button type="button"class="btn btn-danger btn-reserva" data-toggle="modal" data-target="#reserva">Resevar</button>
+				</div>
 		</div>
-
-
 	</div>
+
+	<div class="modal fade" id="reserva" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Datos de la Reserva</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="recipient-name" class="col-form-label">Nombre y Apellido:</label>
+							<input type="text" class="form-control" id="recipient-name">
+						</div>
+						<div class="form-group">
+							<label for="email" class="col-form-label">Email:</label>
+							<input type="email" class="form-control" id="email">
+						</div>
+						<div class="form-group">
+							<label for="cant-huespedes" class="col-form-label">Cantidad de Huespedes:</label>
+							<select class="custom-select custom-select-sm">
+							  <option selected>Seleccione la cantidad de Huespedes</option>
+							  <option value="1">1</option>
+							  <option value="2">2</option>
+							  <option value="3">3</option>
+							  <option value="4">4</option>
+							  <option value="5">5</option>
+							  <option value="6">6</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="habitaciones" class="col-form-label">Cantidad de habitaciones:</label>
+								<div>
+								<div class="form-check form-check-inline">
+								  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+								  <label class="form-check-label" for="inlineRadio1">1</label>
+								</div>
+								<div class="form-check form-check-inline">
+								  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+								  <label class="form-check-label" for="inlineRadio1">2</label>
+								</div>
+								<div class="form-check form-check-inline">
+								  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+								  <label class="form-check-label" for="inlineRadio1">3</label>
+								</div>
+								<div class="form-check form-check-inline">
+								  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+								  <label class="form-check-label" for="inlineRadio1">4</label>
+								</div>
+								<div class="form-check form-check-inline">
+								  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+								  <label class="form-check-label" for="inlineRadio1">5</label>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-success">Confirmar Reserva</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
 
 </div>
 

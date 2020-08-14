@@ -1,4 +1,4 @@
-.jumbotron {
+.jumbotron{
 	background-color: firebrick;
 	color: white;
 	margin-top: 50px;
@@ -11,18 +11,18 @@
 	margin-top: 10px;
 }
 
-.card-hotel {
+.card-hotel{
 	flex: 1 200px;
 	padding:2px 0px 2px 0px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
 
-.card-hotel p {
+.card-hotel p{
 	text-align: left;
 }
 
-.card-hotel h4 {
+.card-hotel h4{
 	text-align: center;
 	color: dimgray;
 }
@@ -44,3 +44,4 @@
 .tab-content {
 	padding-top: 10px;
 }
+
