@@ -116,7 +116,7 @@
 				<img class="card-img-top img-thumbnail" src="imagenes/retiro.jpg" alt="Resposive image">
 				<p class="card-text">Hotel ubicado en la zona de Retiro, cercano al centro de transbordo ferroviario</p>
 			</div>
-			<div><button type="button"class="btn btn-danger btn-reserva" data-toggle="modal" data-target="#reserva">Resevar</button></div>
+			<div><button type="button"class="btn btn-danger btn-reserva" data-toggle="modal" data-target="#reserva" id="reservaBtn">Resevar</button></div>
 		</div>
 
 		<div class="card card-hotel d-flex flex-column justify-content-between ml-2 mr-2">
@@ -126,7 +126,7 @@
 				<img class="card-img-top img-thumbnail" src="imagenes/palermo.jpg" alt="Resposive image">
 				<p class="card-text">Hotel ubicado en la zona de Palermo Soho, cercano a los bares más reconocidos de la Ciudad Autónoma de Buenos Aires</p>
 			</div>
-			<div><button type="button"class="btn btn-danger btn-reserva" data-toggle="modal" data-target="#reserva" >Resevar</button></div>	
+			<div><button type="button"class="btn btn-danger btn-reserva" data-toggle="modal" data-target="#reserva" id="reservaBtn">Resevar</button></div>	
 		</div>
 
 		<div class="card card-hotel d-flex flex-column justify-content-between ml-2 mr-2">
@@ -136,7 +136,7 @@
 				<img class="card-img-top img-thumbnail" src="imagenes/recoleta.jpg" alt="Resposive image">
 				<p class="card-text">Este hotel se encuentra ubicado en el corazón del barrio de Recoleta</p>	
 			</div>
-			<div><button type="button"class="btn btn-danger btn-reserva" data-toggle="modal" data-target="#reserva">Resevar</button></div>
+			<div><button type="button"class="btn btn-danger btn-reserva" data-toggle="modal" data-target="#reserva" id="reservaBtn">Resevar</button></div>
 		</div>
 
 		<div class="card card-hotel d-flex flex-column justify-content-between ml-2 mr-2">
@@ -146,7 +146,7 @@
 				<img class="card-img-top img-thumbnail" src="imagenes/belgrano.jpg" alt="Resposive image">
 				<p class="card-text">Hotel ubicado en la zona de Belgrano</p>	
 			</div>
-			<div><button type="button"class="btn btn-danger btn-reserva" data-toggle="modal" data-target="#reserva">Resevar</button></div>
+			<div><button type="button"class="btn btn-danger btn-reserva" data-toggle="modal" data-target="#reserva" id="reservaBtn">Resevar</button></div>
 		</div>
 
 		<div class="card card-hotel d-flex flex-column justify-content-between ml-2 mr-2">
@@ -156,7 +156,7 @@
 				<img class="card-img-top img-thumbnail" src="imagenes/once.jpg" alt="Resposive image">
 				<p class="card-text">Hotel ubicado en el barrio comercial de Once</p>
 			</div>
-			<div><button type="button"class="btn btn-danger btn-reserva" data-toggle="modal" data-target="#reserva">Resevar</button></div>
+			<div><button type="button"class="btn btn-danger btn-reserva" data-toggle="modal" data-target="#reserva" id="reservaBtn">Resevar</button></div>
 		</div>
 
 		<div class="card card-hotel d-flex flex-column justify-content-between ml-2 mr-2">
@@ -166,7 +166,7 @@
 				<img class="card-img-top img-thumbnail" src="imagenes/santelmo.jpg" alt="Resposive image">
 				<p class="card-text">En el barrio historico y turístico de San Telmo, a metros de la Avenida 9 de Julio se ubica este hotel</p>	
 			</div>
-			<div><button type="button"class="btn btn-danger btn-reserva" data-toggle="modal" data-target="#reserva">Resevar</button></div>
+			<div><button type="button"class="btn btn-danger btn-reserva" data-toggle="modal" data-target="#reserva" id="reservaBtn">Resevar</button></div>
 		</div>
 		
 		<div class="card card-hotel d-flex flex-column justify-content-between ml-2 mr-2">
@@ -177,7 +177,7 @@
 				<p class="card-text">Si estas buscando hospedarte en la zona más centrica de la Ciudad Autónoma de Buenos Aires, este hotel es para vos</p>	
 			</div>
 			<div>
-				<button type="button"class="btn btn-danger btn-reserva" data-toggle="modal" data-target="#reserva">Resevar</button>
+				<button type="button"class="btn btn-danger btn-reserva" data-toggle="modal" data-target="#reserva" id="reservaBtn">Resevar</button>
 			</div>
 		</div>
 		
@@ -189,7 +189,7 @@
 				<p class="card-text">Hotel ubicado en pleno Puerto Madero, la zona más top de la C.A.B.A.</p>
 			</div>
 				<div>
-					<button type="button"class="btn btn-danger btn-reserva" data-toggle="modal" data-target="#reserva">Resevar</button>
+					<button type="button"class="btn btn-danger btn-reserva" data-toggle="modal" data-target="#reserva" id="reservaBtn">Resevar</button>
 				</div>
 		</div>
 	</div>
@@ -337,6 +337,27 @@
 			$("[data-toggle='popover']").popover();   
 			$('.carousel').carousel({
 				interval:2000
+			});
+			$('#reserva').on('show.bs.modal', function(e){
+				console.log('el modal se esta mostrando')
+
+				$('#reservaBtn').removeClass('btn-danger');
+				$('#reservaBtn').addClass('btn-primary');
+				$('#reservaBtn').prop('disabled',true);
+			});
+			$('#reserva').on('shown.bs.modal', function(e){
+				console.log('el modal se mostró')
+
+				$('#reservaBtn').removeClass('btn-primary');
+				$('#reservaBtn').addClass('btn-danger');
+				$('#reservaBtn').prop('disabled',false);
+			
+			});
+			$('#reserva').on('hide.bs.modal', function(e){
+				console.log('el modal se oculta')
+			});
+			$('#reserva').on('hidden.bs.modal', function(e){
+				console.log('el modal se ocultó')
 			});
     	});
     </script>

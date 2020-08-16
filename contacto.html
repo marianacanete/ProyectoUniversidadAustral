@@ -45,7 +45,11 @@
 			</ol>
 		</nav>
 
-		<h1> Dejame tu comentario</h1>
+		<h1>Consultas</h1>
+
+		<div>
+			<p>Para poder contestar sus consultas rogamos completar el siguiente cuadro con todos los datos requeridos. Muchas gracias.</p>
+		</div>
 	
 		<form>
 			<div class="form-row">
@@ -60,15 +64,16 @@
 			</div>
 			<div class="form-group">
 				<label form="email">Email</label>
-				<input type="email" class="form-control" id="email" placeholder="Ingrese su e-mail">
+				<input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
+				<small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu email o información de contacto con nadie</small>
 			</div>
 			<div class="form-row">
 				<div class="form-group col-sm-9">
-					<label form="domicilio">Domicilio</label>
-					<input type="text" class="form-control" id="domicilio" placeholder="Ingrese su domicilio">
+					<label form="domicilio">Teléfono</label>
+					<input type="tel" class="form-control" id="teléfono" placeholder="(Código de área) Número">
 				</div>
 				<div class="form-group col-sm-3">
-					<label form="provincia">Provincia</label>
+					<label form="provincia">Ciudad</label>
 					<select id="provincia" class="form-control">
 						<option selected> Capital Federal </option>
 						<option>Buenos Aires</option>
